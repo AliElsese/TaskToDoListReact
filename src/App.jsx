@@ -13,9 +13,9 @@ function App() {
   }
 
   function deleteTask(index) {
-    tasks.splice(index,1);
-    console.log(tasks)
-    setTasks(tasks)
+    let userTasks = [...tasks]
+    userTasks.splice(index,1);
+    setTasks(userTasks)
   }
 
   return (
